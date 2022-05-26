@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "CARGA_FT_TRANSFERENCIAS", "CARGA_FT_TRANSFERENCIAS.dtproj", "{3A05E8DA-C2C6-4F10-ADD8-14D0882DED25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A05E8DA-C2C6-4F10-ADD8-14D0882DED25}.Development|Default.ActiveCfg = Development
+		{3A05E8DA-C2C6-4F10-ADD8-14D0882DED25}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A7CB2B5-8AE2-4DF9-B56C-DE518F139F71}
+	EndGlobalSection
+EndGlobal
