@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">PROD-UCUDBS10</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1" SSIS:Salt="o34epKBk+cE=" SSIS:IV="Rzej2BJG+bl2Llz4KYEpyQ==" SSIS:Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc">IsxGBjfB8uUn4GBPHQYN55RsqmRa0AFX8+VACyqCsVofR7OyYbGCPbrrx3EToMuWj/97HcstIp0ntCHfWEEf+0xL918aX6ueq/brrglTZunLHByYHO+WjWzDO0rcsP6YSepgLcgenV4JhesFv4ZtaDEAXOItppWQnCOafI/1N1wjPlvsW7AvN7GuXd1F2zMg</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1" SSIS:Salt="eO/fVoTY8No=" SSIS:IV="J+T8fsICCelY2TzPXvhf7w==" SSIS:Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc">pxNE3PMR87HX4IkMXGghNjEmDPSc0QxzT00qJFSl3H6qm0KKmcfnsintiIzSonoJ5ew1Lnt1n9tSUE1iix4qHm/CXuUxadxv/lF+Nptmb7aIbYZO4G4CuNszii7ucEmJDABD+E9Ki74hU86tZUsiyNrFHr0oWDqgX6btIm9wQvIvatBHFPBHA2X2YTc8oHhu</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,10 +42,10 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">507</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">518</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{77FC725D-F026-4048-9C89-C73C666D9ACD}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{FB5DC31B-0830-4A7F-9C6C-6F515485AE3E}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -168,6 +168,36 @@
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Value">Saico_DW</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.DW_FT_TransfInt.log.ConnectByProxy">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.DW_FT_TransfInt.log.ConnectionString">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\ETL UCU\REGISTRO_ERRORES\DW_FT_TransfInt.log</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>

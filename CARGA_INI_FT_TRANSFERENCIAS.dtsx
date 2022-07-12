@@ -12,8 +12,8 @@
   DTS:ObjectName="Package"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="514"
-  DTS:VersionGUID="{16AC36FE-3981-49F8-B064-48AB85705096}">
+  DTS:VersionBuild="518"
+  DTS:VersionGUID="{FB5DC31B-0830-4A7F-9C6C-6F515485AE3E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,15 +27,26 @@
           DTS:ConnectionString="Data Source=10.245.0.30;User ID=Saico_DW;Initial Catalog=UCU;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <EncryptedData
             Type="http://www.w3.org/2001/04/xmlenc#Element"
-            Salt="jLg0EbB7VDc="
-            IV="L/30Hw2TOTe1Q13rckSmOQ==" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            Salt="BzaIhRD6PJc="
+            IV="82pJ10U83p3aI0ldGFcb/g==" xmlns="http://www.w3.org/2001/04/xmlenc#">
             <EncryptionMethod
               Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc" />
             <CipherData>
-              <CipherValue>L/30Hw2TOTe1Q13rckSmOfZS6YPNWSvbjU0baihP3J6rXfta2aF+Z4c4Da9MqGQUTIRyJ/2HEQ5L9tuNX4jelPzjKOO6PitLO1W2g0ezn3aNqg2SUhTuLAIY9ibtwoLDAsirfhUOh9Fyz6qiOcIMbUnKHtRbBnoC2L45sgt5TemCMG9pd4sF+Vqhk+xrJ14X</CipherValue>
+              <CipherValue>82pJ10U83p3aI0ldGFcb/k/kpp2+IqVw3iA2n1X22W5xe5D3VSFkEiGLe0RdOxMS6Wvrzsbeh5yM74Se5rMIha+7tTmzITCsDeFeEqnFypWbSzwh9fr1xITCCl9hGC4S+nnPPGuuxSuZLPxkFQJ5ED4fNcBcFB2/oli9CYbydwRSm8PAYXzLqtOt7f1XhQi5</CipherValue>
             </CipherData>
           </EncryptedData>
         </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DW_FT_TransfInt.log]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{AE7F87E1-DCD4-404D-8DEA-3912B62F53AB}"
+      DTS:ObjectName="DW_FT_TransfInt.log">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="C:\ETL UCU\REGISTRO_ERRORES\DW_FT_TransfInt.log" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -48,12 +59,12 @@
           DTS:ConnectionString="DATA SOURCE=HRPROD;USER ID=UCU_GP;">
           <EncryptedData
             Type="http://www.w3.org/2001/04/xmlenc#Element"
-            Salt="fzQSllf3I00="
-            IV="zIn/4nTiNjpFqgfNFSqc9w==" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            Salt="e0GyZwHy60w="
+            IV="Gg9IVq7PPDywhcyY71MvvA==" xmlns="http://www.w3.org/2001/04/xmlenc#">
             <EncryptionMethod
               Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc" />
             <CipherData>
-              <CipherValue>zIn/4nTiNjpFqgfNFSqc9wGhZSZ7Ot1PMaglh420cj1AX2dCeStxtY6YW/BGcIrNPf2SOB24+HPJ8IEFf5oi18uEPPKJgY9zj+L3YhsxOH2CQSjb5c8GZx63m2vartfRF0JLMtBr21P2v2H6hXUEZIqee5w3eQHXlQgxina+ewq6t+e3BfnfKcADLpKGWVgn</CipherValue>
+              <CipherValue>Gg9IVq7PPDywhcyY71MvvLKCuDWEpJA+wf5AyKafGhBz9Qj8fBhqp9CiKObF7l4wnyVt7NHCWAL0OrgmbE496x52cwSdMN0t6ErRcJsZMMm/hjmMZi2H2LcSmC+niEYUxjbSBAdl8WNx1lBonmtH0R4Cbcv/PrYEyany5aTWPgQ/IvfD6w/R3UIZ+f/yJW28</CipherValue>
             </CipherData>
           </EncryptedData>
         </DTS:ConnectionManager>
@@ -109,19 +120,60 @@
           DTS:ConnectionString="Data Source=Saico;User ID=Saico_DW;Provider=SSISOLEDB.3;Location=10.245.0.30;">
           <EncryptedData
             Type="http://www.w3.org/2001/04/xmlenc#Element"
-            Salt="xPxLQqa2lo0="
-            IV="5TXwftm4YqDz6Xks8GXpsw==" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            Salt="Q1/jiRajmy8="
+            IV="IyEbS97zjiOEXiVj/ecR9w==" xmlns="http://www.w3.org/2001/04/xmlenc#">
             <EncryptionMethod
               Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc" />
             <CipherData>
-              <CipherValue>5TXwftm4YqDz6Xks8GXps/vh18FnabB/NpUgWIYib26ME5Hc/OdaR/krN+TvZTn9bSS8tvg//YMDaGU+nDc+TkDKJ1TACv8VWrz+YivNH7SADm2GyleebDzd2E6Jl/xA47TFMaW31J3nzz0G1BSH7uoME+js8VeBy4SA7al8T9QfbUkx6l2THzr8E6oKZapt</CipherValue>
+              <CipherValue>IyEbS97zjiOEXiVj/ecR98VYm5KPcD+0/f1227KRBVHqYrHFAQhT4AmF3bIyztDfJFxB9KPMITGk2SB3Tu8bI4rP3ohxSTm98HrI7y9UF2tF8JDSSHmiJshpy+0dO8HRut0H2/nQkjjYTkFcFvNLt1K7Vchab135RMaMXp5qRAMGE/rvrV6idE1+15qrPFGa</CipherValue>
             </CipherData>
           </EncryptedData>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
+  <DTS:LogProviders>
+    <DTS:LogProvider
+      DTS:ConfigString="DW_FT_TransfInt.log"
+      DTS:CreationName="Microsoft.LogProviderTextFile"
+      DTS:Description="Escribe entradas del registro sobre eventos en un archivo CSV"
+      DTS:DTSID="{255D5806-FF0A-4734-96EE-B8750526C3B0}"
+      DTS:ObjectName="Proveedor de registro SSIS para archivos de texto">
+      <DTS:ObjectData>
+        <InnerObject />
+      </DTS:ObjectData>
+    </DTS:LogProvider>
+  </DTS:LogProviders>
   <DTS:Variables />
+  <DTS:LoggingOptions
+    DTS:FilterKind="0"
+    DTS:LoggingMode="1">
+    <DTS:Property
+      DTS:DataType="8"
+      DTS:Name="EventFilter">1,7,OnError</DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnError"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:SelectedLogProviders>
+      <DTS:SelectedLogProvider
+        DTS:InstanceID="{255D5806-FF0A-4734-96EE-B8750526C3B0}" />
+    </DTS:SelectedLogProviders>
+  </DTS:LoggingOptions>
   <DTS:Executables>
     <DTS:Executable
       DTS:refId="Package\Ajustes"
@@ -134,10 +186,12 @@
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
       DTS:ThreadHint="0">
       <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{FADBA1DA-E4FC-45ED-AE47-9EBF3DC3117B}"
-          SQLTask:SqlStatementSource="&#xA;-- Ajustes Datos FT &#xA;update  FT_TRANSFERENCIAS set aniomes= CONCAT(año,'-',mes);&#xA;update  FT_TRANSFERENCIAS set fuente= 'SAICO' where fuente is null;&#xA;update  FT_TRANSFERENCIAS set CANT_MESES= 0 where  CANT_MESES&lt;0;&#xA;update  FT_TRANSFERENCIAS set CANTIDAD_HS=HS_MENSUALES_DESIGNADAS   where  CANTIDAD_HS is null and TIPO_HORA='PAD' and FUENTE='MAGIX';&#xA;update  FT_TRANSFERENCIAS set CANTIDAD_HS=HS_MENSUALES_DESIGNADAS   where  CANTIDAD_HS is null and TIPO_HORA='GESION' and FUENTE='MAGIX';&#xA;update FT_TRANSFERENCIAS set CC_ORIGEN=trim(CC_ORIGEN), CC_DESTINO=trim(CC_DESTINO);&#xA; &#xA; &#xA;-- Mejoras en DOCUMENTO ID&#xA;update FT_DESIGNACION_DS set DOCUMENTO_ID= replace(DOCUMENTO_ID,' ','');&#xA;update FT_TRANSFERENCIAS set DOCUMENTO_ID= replace(DOCUMENTO_ID,' ','');&#xA;update FT_TRANSFERENCIAS set DOCUMENTO_ID= replace(DOCUMENTO_ID,'C','') where DOCUMENTO_ID like '%C';&#xA;update FT_TRANSFERENCIAS set DOCUMENTO_ID= replace(DOCUMENTO_ID,'B','') where DOCUMENTO_ID like '%B';&#xA;update FT_TRANSFERENCIAS set DOCUMENTO_ID= concat('C',DOCUMENTO_ID) where DOCUMENTO_ID like 'I%';&#xA;update f set f.DOCUMENTO_ID= (select distinct concat(trim(tipo_doc), trim(documento_nro)) from  dw_ucu.[dbo].[DT_Funcionario] dt where dt.funid=SAICO_ID)&#xA;from FT_TRANSFERENCIAS  f where DOCUMENTO_ID is null;&#xA;update F  SET f.DOCUMENTO_ID= (select concat(f2.tipo_doc,F2.documento_nro) from DT_Funcionario f2 where f2.funid=&#xA;F.saico_id) FROM  FT_TRANSFERENCIAS F left join DT_Funcionario FU on F.DOCUMENTO_ID=concat(fu.tipo_doc,FU.documento_nro)&#xA;where fu.funnom1 is null and fuente='SAICO';&#xA;&#xA;update FT_TRANSFERENCIAS set DOCUMENTO_ID='CI60633891' where DOCUMENTO_ID='CD6063389';&#xA;update FT_TRANSFERENCIAS set DOCUMENTO_ID='CI62477449' where DOCUMENTO_ID='DNI21024519';&#xA;update FT_TRANSFERENCIAS set DOCUMENTO_ID='CI37259551' where DOCUMENTO_ID='DNI37259550';&#xA;update FT_TRANSFERENCIAS set DOCUMENTO_ID='CI60532544' where DOCUMENTO_ID='PAS238713';&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;-- Valores de Diciembre a Enero&#xA;&#xA; &#xA;-- SAICO &#xA;&#xA;update  f1 set ValorHoraLiq= (select TOP 1 ValorHoraLiq from FT_TRANSFERENCIAS f2 where f2.DOCUMENTO_ID=f1.DOCUMENTO_ID&#xA;and f2.TIPO_HORA=f1.TIPO_HORA and f2.CARGO_ID=f1.CARGO_ID and f2.fuente=f1.fuente and f2.CC_ORIGEN=f1.CC_ORIGEN and f2.CC_DESTINO=f1.CC_DESTINo&#xA;and f2.Año=f1.Año-1 and f2.Mes=12 and f2.TIPO_HORA='PAD' and f1.TIPO_TRANSACCION=f2.TIPO_TRANSACCION )&#xA;from FT_TRANSFERENCIAS f1&#xA;where f1.Mes=1 and f1.TIPO_HORA='PAD' and f1.FUENTE='SAICO' and f1.ValorHoraLiq is not null;&#xA;&#xA;update  f1 set ValorHoraLiq= (select TOP 1 ValorHoraLiq from FT_TRANSFERENCIAS f2 where f2.DOCUMENTO_ID=f1.DOCUMENTO_ID&#xA;and f2.TIPO_HORA=f1.TIPO_HORA and f2.CARGO_ID=f1.CARGO_ID and f2.fuente=f1.fuente and f2.CC_ORIGEN=f1.CC_ORIGEN and f2.CC_DESTINO=f1.CC_DESTINo&#xA;and f2.Año=f1.Año-1 and f2.Mes=12 and f2.TIPO_HORA='GESTION' and f1.TIPO_TRANSACCION=f2.TIPO_TRANSACCION )&#xA;from FT_TRANSFERENCIAS f1&#xA;where f1.Mes=1 and f1.TIPO_HORA='GESTION' and f1.FUENTE='SAICO' and f1.ValorHoraLiq is not null;&#xA;&#xA;update  f1 set ValorHoraLiq= (select TOP 1 ValorHoraLiq from FT_TRANSFERENCIAS f2 where f2.DOCUMENTO_ID=f1.DOCUMENTO_ID&#xA;and f2.TIPO_HORA=f1.TIPO_HORA and f2.CARGO_ID=f1.CARGO_ID and f2.fuente=f1.fuente and f2.CC_ORIGEN=f1.CC_ORIGEN and f2.CC_DESTINO=f1.CC_DESTINo&#xA;and f2.Año=f1.Año-1 and f2.Mes=12 and f2.TIPO_HORA='DOCENCIA AULAS' and f1.TIPO_TRANSACCION=f2.TIPO_TRANSACCION )&#xA;from FT_TRANSFERENCIAS f1&#xA;where f1.Mes=1 and f1.TIPO_HORA='DOCENCIA AULAS' and f1.FUENTE='SAICO' and f1.ValorHoraLiq is not null;&#xA;&#xA;update  f1 set ValorHoraLiq= (select TOP 1 ValorHoraLiq from FT_TRANSFERENCIAS f2 where f2.DOCUMENTO_ID=f1.DOCUMENTO_ID&#xA;and f2.TIPO_HORA=f1.TIPO_HORA and f2.CARGO_ID=f1.CARGO_ID and f2.fuente=f1.fuente and f2.CC_ORIGEN=f1.CC_ORIGEN and f2.CC_DESTINO=f1.CC_DESTINo&#xA;and f2.Año=f1.Año-1 and f2.Mes=12 and f2.TIPO_HORA='DOCENCIA PAD' and f1.TIPO_TRANSACCION=f2.TIPO_TRANSACCION )&#xA;from FT_TRANSFERENCIAS f1&#xA;where f1.Mes=1 and f1.TIPO_HORA='DOCENCIA PAD' and f1.FUENTE='SAICO' and f1.ValorHoraLiq is not null;&#xA;&#xA;&#xA; update  f1 set VALOR_TRANSACCION =  ValorHoraLiq*HORAS_TRANSACCION&#xA;from FT_TRANSFERENCIAS f1&#xA;where f1.Mes=1 and  f1.FUENTE='SAICO';&#xA;&#xA;-- COPIAS ROTADAS&#xA;&#xA;&#xA; &#xA;-- SAICO &#xA;-- Copiar SAICO GESTION&#xA;&#xA;INSERT INTO [dbo].[FT_TRANSFERENCIAS]&#xA;           ([DOCUMENTO_ID]&#xA;           ,[FEC_INICIO_DESG]&#xA;           ,[FEC_FIN_DESG]&#xA;           ,[ValorHoraLiq]&#xA;           ,[ValorHoraCargo]&#xA;           ,[TIPO_HORA]&#xA;           ,[CC_ORIGEN]&#xA;           ,[Año]&#xA;           ,[Mes]&#xA;           ,[CC_DESTINO]&#xA;           ,[CARGO_ID]&#xA;           ,[PORC_HORAS]&#xA;           ,[ValorHoraCargoLau]&#xA;           ,[HS_MENSUALES_DESIGNADAS]&#xA;           ,[RUBRO_VENTA]&#xA;           ,[RUBRO_COMPRA]&#xA;           ,[TIPO_TRANSACCION]&#xA;           ,[FACTOR]&#xA;           ,[FACTOR_DISTRIBUCION]&#xA;           ,[VALOR_CANTIDAD_HS]&#xA;           ,[HORAS_TRANSACCION]&#xA;           ,[VALOR_TRANSACCION]&#xA;           ,[CICLO_ID]&#xA;           ,[CLASE_ID]&#xA;           ,[CANTIDAD_HS]&#xA;           ,[COD_NEGOCIO]&#xA;           ,[COD_CLASE_DEPTO]&#xA;           ,[Total_Alumos]&#xA;           ,[cantInscripto]&#xA;           ,[CARRERA_ID]&#xA;           ,[CANT_MESES]&#xA;           ,[fuente]&#xA;           ,[aniomes]&#xA;           ,[SAICO_ID])&#xA;select  &#xA;[DOCUMENTO_ID]&#xA;      ,[FEC_INICIO_DESG]&#xA;      ,[FEC_FIN_DESG]&#xA;      ,[ValorHoraLiq]&#xA;      ,[ValorHoraCargo]&#xA;      ,[TIPO_HORA]&#xA;      ,[CC_DESTINO] [CC_ORIGEN]&#xA;      ,   [Año]&#xA;      ,  [Mes]&#xA;      ,[CC_ORIGEN] [CC_DESTINO]&#xA;      ,[CARGO_ID]&#xA;      ,[PORC_HORAS]&#xA;      , [ValorHoraCargoLau]&#xA;      , abs([HS_MENSUALES_DESIGNADAS])&#xA;      ,81101  [RUBRO_VENTA]&#xA;      ,91101 [RUBRO_COMPRA]&#xA;      , 'VENTA'  &#xA;      ,[FACTOR]&#xA;      ,[FACTOR_DISTRIBUCION]&#xA;      ,abs([VALOR_CANTIDAD_HS])&#xA;      ,abs([HORAS_TRANSACCION])&#xA;      ,abs([VALOR_TRANSACCION])&#xA;      ,[CICLO_ID]&#xA;      ,[CLASE_ID]&#xA;      , abs([CANTIDAD_HS])&#xA;      ,[COD_NEGOCIO]&#xA;      ,[COD_CLASE_DEPTO]&#xA;      ,[Total_Alumos]&#xA;      ,[cantInscripto]&#xA;      ,[CARRERA_ID]&#xA;      ,[CANT_MESES]&#xA;      ,[fuente]&#xA;      ,[aniomes]&#xA;      ,[SAICO_ID]&#xA;&#x9;   from FT_TRANSFERENCIAS&#xA;where TIPO_TRANSACCION = 'COMPRA'   and fuente = 'SAICO' and TIPO_HORA='GESTION';&#xA;&#xA;-- Copiar SAICO Aulas&#xA;&#xA;INSERT INTO [dbo].[FT_TRANSFERENCIAS]&#xA;           ([DOCUMENTO_ID]&#xA;           ,[FEC_INICIO_DESG]&#xA;           ,[FEC_FIN_DESG]&#xA;           ,[ValorHoraLiq]&#xA;           ,[ValorHoraCargo]&#xA;           ,[TIPO_HORA]&#xA;           ,[CC_ORIGEN]&#xA;           ,[Año]&#xA;           ,[Mes]&#xA;           ,[CC_DESTINO]&#xA;           ,[CARGO_ID]&#xA;           ,[PORC_HORAS]&#xA;           ,[ValorHoraCargoLau]&#xA;           ,[HS_MENSUALES_DESIGNADAS]&#xA;           ,[RUBRO_VENTA]&#xA;           ,[RUBRO_COMPRA]&#xA;           ,[TIPO_TRANSACCION]&#xA;           ,[FACTOR]&#xA;           ,[FACTOR_DISTRIBUCION]&#xA;           ,[VALOR_CANTIDAD_HS]&#xA;           ,[HORAS_TRANSACCION]&#xA;           ,[VALOR_TRANSACCION]&#xA;           ,[CICLO_ID]&#xA;           ,[CLASE_ID]&#xA;           ,[CANTIDAD_HS]&#xA;           ,[COD_NEGOCIO]&#xA;           ,[COD_CLASE_DEPTO]&#xA;           ,[Total_Alumos]&#xA;           ,[cantInscripto]&#xA;           ,[CARRERA_ID]&#xA;           ,[CANT_MESES]&#xA;           ,[fuente]&#xA;           ,[aniomes]&#xA;           ,[SAICO_ID])&#xA;select  &#xA;[DOCUMENTO_ID]&#xA;      ,[FEC_INICIO_DESG]&#xA;      ,[FEC_FIN_DESG]&#xA;      ,[ValorHoraLiq]&#xA;      ,[ValorHoraCargo]&#xA;      ,[TIPO_HORA]&#xA;      ,[CC_DESTINO] [CC_ORIGEN]&#xA;      ,   [Año]&#xA;      ,  [Mes]&#xA;      ,[CC_ORIGEN] [CC_DESTINO]&#xA;      ,[CARGO_ID]&#xA;      ,[PORC_HORAS]&#xA;      , [ValorHoraCargoLau]&#xA;      , abs([HS_MENSUALES_DESIGNADAS])*-1&#xA;      ,[RUBRO_VENTA]&#xA;      ,[RUBRO_COMPRA]&#xA;      , 'Transferencia Origen'  &#xA;      ,[FACTOR]&#xA;      ,[FACTOR_DISTRIBUCION]&#xA;      ,abs([VALOR_CANTIDAD_HS])*-1&#xA;      ,abs([HORAS_TRANSACCION])*-1&#xA;      ,abs([VALOR_TRANSACCION])*-1&#xA;      ,[CICLO_ID]&#xA;      ,[CLASE_ID]&#xA;      , abs([CANTIDAD_HS])*-1&#xA;      ,[COD_NEGOCIO]&#xA;      ,[COD_CLASE_DEPTO]&#xA;      ,[Total_Alumos]&#xA;      ,[cantInscripto]&#xA;      ,[CARRERA_ID]&#xA;      ,[CANT_MESES]&#xA;      ,[fuente]&#xA;      ,[aniomes]&#xA;      ,[SAICO_ID]&#xA;&#x9;   from FT_TRANSFERENCIAS&#xA;where TIPO_TRANSACCION = 'Transferencia Destino'   and fuente = 'SAICO';&#xA;&#xA;&#xA;&#xA;-- Copiar SAICO Docencia PAD&#xA;&#xA;&#xA;INSERT INTO [dbo].[FT_TRANSFERENCIAS]&#xA;           ([DOCUMENTO_ID]&#xA;           ,[FEC_INICIO_DESG]&#xA;           ,[FEC_FIN_DESG]&#xA;           ,[ValorHoraLiq]&#xA;           ,[ValorHoraCargo]&#xA;           ,[TIPO_HORA]&#xA;           ,[CC_ORIGEN]&#xA;           ,[Año]&#xA;           ,[Mes]&#xA;           ,[CC_DESTINO]&#xA;           ,[CARGO_ID]&#xA;           ,[PORC_HORAS]&#xA;           ,[ValorHoraCargoLau]&#xA;           ,[HS_MENSUALES_DESIGNADAS]&#xA;           ,[RUBRO_VENTA]&#xA;           ,[RUBRO_COMPRA]&#xA;           ,[TIPO_TRANSACCION]&#xA;           ,[FACTOR]&#xA;           ,[FACTOR_DISTRIBUCION]&#xA;           ,[VALOR_CANTIDAD_HS]&#xA;           ,[HORAS_TRANSACCION]&#xA;           ,[VALOR_TRANSACCION]&#xA;           ,[CICLO_ID]&#xA;           ,[CLASE_ID]&#xA;           ,[CANTIDAD_HS]&#xA;           ,[COD_NEGOCIO]&#xA;           ,[COD_CLASE_DEPTO]&#xA;           ,[Total_Alumos]&#xA;           ,[cantInscripto]&#xA;           ,[CARRERA_ID]&#xA;           ,[CANT_MESES]&#xA;           ,[fuente]&#xA;           ,[aniomes]&#xA;           ,[SAICO_ID])&#xA;select  &#xA;[DOCUMENTO_ID]&#xA;      ,[FEC_INICIO_DESG]&#xA;      ,[FEC_FIN_DESG]&#xA;      , ([ValorHoraLiq])&#xA;      , ([ValorHoraCargo])&#xA;      ,[TIPO_HORA]&#xA;      ,[CC_DESTINO]  &#xA;      ,  [Año]&#xA;      ,  [Mes]&#xA;      ,[CC_ORIGEN]  &#xA;      ,[CARGO_ID]&#xA;      ,[PORC_HORAS]&#xA;      , ([ValorHoraCargoLau])&#xA;      , ([HS_MENSUALES_DESIGNADAS])*-1&#xA;      , [RUBRO_COMPRA]&#xA;      , [RUBRO_VENTA]&#xA;      , 'VENTA'  &#xA;      ,[FACTOR]&#xA;      ,[FACTOR_DISTRIBUCION]&#xA;      , ([VALOR_CANTIDAD_HS])*-1&#xA;      , ([HORAS_TRANSACCION])*-1&#xA;      , ([VALOR_TRANSACCION])*-1&#xA;      ,[CICLO_ID]&#xA;      ,[CLASE_ID]&#xA;      ,[CANTIDAD_HS]*-1&#xA;      ,[COD_NEGOCIO]&#xA;      ,[COD_CLASE_DEPTO]&#xA;      ,[Total_Alumos]&#xA;      ,[cantInscripto]&#xA;      ,[CARRERA_ID]&#xA;      ,[CANT_MESES]&#xA;      ,[fuente]&#xA;      ,[aniomes]&#xA;      ,[SAICO_ID] &#xA;  from FT_TRANSFERENCIAS &#xA;where [TIPO_HORA]='DOCENCIA PAD' and fuente='SAICO' and TIPO_TRANSACCION='COMPRA';&#xA;&#xA;&#xA;-- UNIDADES OPERATIVAS &#xA;&#xA; update FT set FT.[UNIDAD_ORIGEN_ID]= (select TOP 1 FIN_CC_CLAVE_UNOP from DT_CENTROS_COSTO CC where &#xA;  CC.CENTRO_COSTO_ANIO=FT.Año and FIN_CC_CLAVE_UNIF=FT.CC_ORIGEN)&#xA; FROM  FT_TRANSFERENCIAS FT where ft.fuente='SAICO' and Año*100+mes&gt;202109;&#xA; &#xA; &#xA;&#xA;  update FT set FT.UNIDAD_DESTINO_ID= (select TOP 1 FIN_CC_CLAVE_UNOP from DT_CENTROS_COSTO CC where &#xA;  CC.CENTRO_COSTO_ANIO=FT.Año and FIN_CC_CLAVE_UNIF=FT.CC_DESTINO)&#xA; FROM  FT_TRANSFERENCIAS FT   where ft.fuente='SAICO'  and Año*100+mes&gt;202109;--  and ft.TIPO_HORA='DOCENCIA PAD' and UNIDAD_DESTINO_ID is null;&#xA; &#xA;&#xA; -- Si no encontro por a;o&gt;&#xA;   update FT set FT.[UNIDAD_ORIGEN_ID]= (select TOP 1 FIN_CC_CLAVE_UNOP from DT_CENTROS_COSTO CC where &#xA;    FIN_CC_CLAVE_UNIF=FT.CC_ORIGEN)&#xA; FROM  FT_TRANSFERENCIAS FT  where Ft.UNIDAD_ORIGEN_ID is null &#xA; ;&#xA; &#xA;  &#xA;   update FT set FT.[UNIDAD_DESTINO_ID]= (select TOP 1 FIN_CC_CLAVE_UNOP from DT_CENTROS_COSTO CC where &#xA;    FIN_CC_CLAVE_UNIF=FT.CC_DESTINO)&#xA; FROM  FT_TRANSFERENCIAS FT  where Ft.UNIDAD_DESTINO_ID is null &#xA; ;&#xA;&#xA; &#xA;-- Transferencias que estan por MAGIX &#xA; delete from FT_TRANSFERENCIAS where fuente='SAICO' and Año*100+mes&lt;202110;&#xA;  &#xA; &#xA;delete F from FT_TRANSFERENCIAS F&#xA;where F.fuente='MAGIX'  -- and  DOCUMENTO_ID='CI40706646'&#xA;AND TIPO_HORA='GESTION'  and  not exists (select * from FT_TRANSFERENCIAS F2 where  F2.fuente='MAGIX' and  F2.TIPO_HORA='PAD' and F2.DOCUMENTO_ID=F.DOCUMENTO_ID and f2.aniomes=f.aniomes)&#xA;;&#xA;&#xA; &#xA;&#xA;&#xA;delete f from FT_TRANSFERENCIAS F&#xA;where   TIPO_HORA='GESTION'  and  not exists (select * from FT_TRANSFERENCIAS F2 where    F2.TIPO_HORA='PAD' and F2.DOCUMENTO_ID=F.DOCUMENTO_ID and f2.aniomes=f.aniomes)&#xA;&#xA;-- Borrar mes corriente&#xA; delete from FT_TRANSFERENCIAS where fuente='SAICO' and Año*100+mes=YEAR(CURRENT_TIMESTAMP)*100+MONTH(CURRENT_TIMESTAMP);&#xA;  &#xA;-- VEr de eliminar este arreglo.&#xA; update FT_TRANSFERENCIAS SET RUBRO_VENTA=91101, RUBRO_COMPRA=81101&#xA;where  fuente='SAICO' and TIPO_HORA='GESTION' and RUBRO_VENTA=81101&#xA;&#xA;update FT_TRANSFERENCIAS SET RUBRO_VENTA=81101, RUBRO_COMPRA= 91101&#xA;where  fuente='SAICO' and TIPO_HORA='GESTION' and RUBRO_VENTA=91101 and TIPO_TRANSACCION='VENTA'&#xA;&#xA;update FT_TRANSFERENCIAS SET RUBRO_VENTA=91102, RUBRO_COMPRA=81102&#xA;where  fuente='SAICO' and TIPO_HORA='DOCENCIA PAD' and RUBRO_VENTA=81102&#xA;&#xA;update FT_TRANSFERENCIAS SET RUBRO_VENTA=81102, RUBRO_COMPRA= 91102&#xA;where  fuente='SAICO' and TIPO_HORA='DOCENCIA PAD' and RUBRO_VENTA=91102 and TIPO_TRANSACCION='VENTA'&#xA;&#xA; &#xA;-- update FT_TRANSFERENCIAS set UNIDAD_ORIGEN_ID_aux = CC_DESTINO,  UNIDAD_DESTINO_ID_aux = CC_ORIGEN&#xA;-- where TIPO_HORA='DOCENCIA PAD' and TIPO_TRANSACCION='VENTA' and fuente='SAICO';&#xA;&#xA;-- update FT_TRANSFERENCIAS set CC_ORIGEN = UNIDAD_ORIGEN_ID_aux,  CC_DESTINO =UNIDAD_DESTINO_ID_aux &#xA;-- where TIPO_HORA='DOCENCIA PAD' and TIPO_TRANSACCION='VENTA' and fuente='SAICO';&#xA;&#xA;&#xA;-- update FT_TRANSFERENCIAS set UNIDAD_ORIGEN_ID_aux = CC_DESTINO,  UNIDAD_DESTINO_ID_aux = CC_ORIGEN&#xA;-- where TIPO_HORA='DOCENCIA PAD' and TIPO_TRANSACCION='COMPRA' and fuente='SAICO';&#xA;&#xA;-- update FT_TRANSFERENCIAS set CC_ORIGEN = UNIDAD_ORIGEN_ID_aux,  CC_DESTINO =UNIDAD_DESTINO_ID_aux &#xA;-- where TIPO_HORA='DOCENCIA PAD' and TIPO_TRANSACCION='COMPRA' and fuente='SAICO';&#xA;&#xA;&#xA;&#xA;  &#xA;&#xA; &#xA; -- Valore no encontrados&#xA;update F set ValorHoraLiq=&#xA;&#xA;(select TOP 1  L.ValorHoraLiq from [DW_UCU].[dbo].[DT_Docente] D ,  ODS_UCU.dbo.ODS_SAICO_LIQUIDACIONES L ,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  [ODS_UCU].[dbo].[ODS_MAPEO_FUNCIONARIOS] map  &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;where  L.SaicoID=map.NRO_FUN_SAICO and  d.EMPLID=map.EMPLID and D.DOCUMENTO_ID=F.DOCUMENTO_ID  and   L.Año=F.Año and  L.Mes=F.Mes order by  L.Año*100+L.Mes desc  )&#xA;FROM FT_TRANSFERENCIAS F&#xA;where fuente='SAICO'  --and SAICO_ID=322370  --and ValorHoraLiq is null --and SAICO_ID is null &#xA;;&#xA;&#xA;&#xA;update F set ValorHoraCargo=&#xA;&#xA;(select TOP 1  L.ValorHoraCargo from [DW_UCU].[dbo].[DT_Docente] D ,  ODS_UCU.dbo.ODS_SAICO_LIQUIDACIONES L ,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  [ODS_UCU].[dbo].[ODS_MAPEO_FUNCIONARIOS] map  &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;where  L.SaicoID=map.NRO_FUN_SAICO and  d.EMPLID=map.EMPLID and D.DOCUMENTO_ID=F.DOCUMENTO_ID  and   L.Año=F.Año and  L.Mes=F.Mes order by  L.Año*100+L.Mes desc  )&#xA;FROM FT_TRANSFERENCIAS F&#xA;where fuente='SAICO'  --and SAICO_ID=322370  --and ValorHoraLiq is null --and SAICO_ID is null &#xA;;&#xA;&#xA;update F set ValorHoraCargoLau=&#xA;&#xA;(select TOP 1  L.ValorHoraCargoLau from [DW_UCU].[dbo].[DT_Docente] D ,  ODS_UCU.dbo.ODS_SAICO_LIQUIDACIONES L ,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  [ODS_UCU].[dbo].[ODS_MAPEO_FUNCIONARIOS] map  &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;where  L.SaicoID=map.NRO_FUN_SAICO and  d.EMPLID=map.EMPLID and D.DOCUMENTO_ID=F.DOCUMENTO_ID  and   L.Año=F.Año and  L.Mes=F.Mes order by  L.Año*100+L.Mes desc  )&#xA;FROM FT_TRANSFERENCIAS F&#xA;where fuente='SAICO'  --and SAICO_ID=322370  --and ValorHoraLiq is null --and SAICO_ID is null &#xA;;&#xA;&#xA;&#xA;&#x9;-- update FT_TRANSFERENCIAS set VALOR_CANTIDAD_HS=  ValorHoraLiq*HS_MENSUALES_DESIGNADAS, VALOR_TRANSACCION=ValorHoraLiq*HS_MENSUALES_DESIGNADAS*FACTOR_DISTRIBUCION&#xA;&#x9;-- where fuente='SAICO';&#xA;&#xA;&#x9; &#x9; update FT_TRANSFERENCIAS set VALOR_CANTIDAD_HS=  ValorHoraLiq*HORAS_TRANSACCION, VALOR_TRANSACCION=ValorHoraLiq*HORAS_TRANSACCION&#xA;&#x9;-- where fuente='MAGIX' and Mes=1 and Año&gt;2019;&#xA;  &#xA;  -- CONTROL select * from FT_TRANSFERENCIAS where   TIPO_TRANSACCION='VENTA' and VALOR_TRANSACCION&lt;0&#xA;update FT_TRANSFERENCIAS set HORAS_TRANSACCION=abs(HORAS_TRANSACCION)*-1&#xA;,VALOR_TRANSACCION=abs(VALOR_TRANSACCION)*-1&#xA;,HS_MENSUALES_DESIGNADAS=abs(HS_MENSUALES_DESIGNADAS)*-1&#xA; where TIPO_HORA='DOCENCIA AULAS'&#xA;and TIPO_TRANSACCION='Transferencia Destino';&#xA;&#xA;update FT_TRANSFERENCIAS set HORAS_TRANSACCION=abs(HORAS_TRANSACCION)&#xA;,VALOR_TRANSACCION=abs(VALOR_TRANSACCION)&#xA;,HS_MENSUALES_DESIGNADAS=abs(HS_MENSUALES_DESIGNADAS)&#xA; where TIPO_HORA='DOCENCIA AULAS'&#xA;and TIPO_TRANSACCION='Transferencia Origen';&#xA;&#xA; &#xA;-- select HORAS_TRANSACCION , HS_MENSUALES_DESIGNADAS from FT_TRANSFERENCIAS where VALOR_TRANSACCION is null and TIPO_HORA='PAD' and Año=2021&#xA;update FT_TRANSFERENCIAS set VALOR_TRANSACCION = null &#xA;where TIPO_HORA='PAD'&#xA;&#xA;&#xA;&#xA;  -- CONTROL select * from FT_TRANSFERENCIAS where   TIPO_TRANSACCION='COMPRA' and VALOR_TRANSACCION&gt;0&#xA;update FT_TRANSFERENCIAS set HORAS_TRANSACCION=abs(HORAS_TRANSACCION)*-1&#xA;,VALOR_TRANSACCION=abs(VALOR_TRANSACCION)*-1&#xA;,HS_MENSUALES_DESIGNADAS=abs(HS_MENSUALES_DESIGNADAS)*-1&#xA; where TIPO_HORA='GESTION'&#xA;and TIPO_TRANSACCION='COMPRA';&#xA;&#xA;update FT_TRANSFERENCIAS set HORAS_TRANSACCION=abs(HORAS_TRANSACCION)&#xA;,VALOR_TRANSACCION=abs(VALOR_TRANSACCION)&#xA;,HS_MENSUALES_DESIGNADAS=abs(HS_MENSUALES_DESIGNADAS)&#xA; where TIPO_HORA='GESTION'&#xA;and TIPO_TRANSACCION='VENTA';&#xA;&#xA;&#xA;&#xA; &#xA; &#xA; &#xA; update ft&#xA;set cod_negocio= case when d.CAMPUS_ID='MVD' THEN 'MDEO'&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;WHEN D.CAMPUS_id='PESTE' THEN 'PDELESTE'&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;ELSE  d.campus_id&#xA;&#x9;&#x9;&#x9;&#x9;end&#xA;from FT_TRANSFERENCIAS FT&#xA;LEFT JOIN dt_clase_inst d on convert(varchar(4),ft.ciclo_id)+right('000000'+ft.clase_id,6) = d.CLAVE_CICLO_CLASE&#xA;where (FT.COD_NEGOCIO is NULL) and FT.TIPO_HORA not in ('Designacion PAD', 'GESTION') -- 258.283&#xA;and d.CICLO_ID not in ('123','1234','')&#xA;and ft.ciclo_id not in ('CURS','PLEN','PRUE','VIRT');&#xA;&#x9; &#x9; " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="-- Ajustes Datos FT &#xA;UPDATE FT_TRANSFERENCIAS&#xA;SET aniomes = CONCAT (&#xA;&#x9;&#x9;año&#xA;&#x9;&#x9;,'-'&#xA;&#x9;&#x9;,mes&#xA;&#x9;&#x9;);&#xA;&#xA;UPDATE FT_TRANSFERENCIAS&#xA;SET fuente = 'SAICO'&#xA;WHERE fuente IS NULL;&#xA;&#xA;UPDATE FT_TRANSFERENCIAS&#xA;SET CANT_MESES = 0&#xA;WHERE CANT_MESES &lt; 0;&#xA;&#xA;UPDATE FT_TRANSFERENCIAS&#xA;SET CANTIDAD_HS = HS_MENSUALES_DESIGNADAS&#xA;WHERE CANTIDAD_HS IS NULL&#xA;&#x9;AND TIPO_HORA = 'PAD'&#xA;&#x9;AND FUENTE = 'MAGIX';&#xA;&#xA;UPDATE FT_TRANSFERENCIAS&#xA;SET CANTIDAD_HS = HS_MENSUALES_DESIGNADAS&#xA;WHERE CANTIDAD_HS IS NULL&#xA;&#x9;AND TIPO_HORA = 'GESION'&#xA;&#x9;AND FUENTE = 'MAGIX';&#xA;&#xA;UPDATE FT_TRANSFERENCIAS&#xA;SET CC_ORIGEN = trim(CC_ORIGEN)&#xA;&#x9;,CC_DESTINO = trim(CC_DESTINO);&#xA;&#xA;-- Mejoras en DOCUMENTO ID&#xA;UPDATE FT_DESIGNACION_DS&#xA;SET DOCUMENTO_ID = replace(DOCUMENTO_ID, ' ', '');&#xA;&#xA;UPDATE FT_TRANSFERENCIAS&#xA;SET DOCUMENTO_ID = replace(DOCUMENTO_ID, ' ', '');&#xA;&#xA;UPDATE FT_TRANSFERENCIAS&#xA;SET DOCUMENTO_ID = replace(DOCUMENTO_ID, 'C', '')&#xA;WHERE DOCUMENTO_ID LIKE '%C';&#xA;&#xA;UPDATE FT_TRANSFERENCIAS&#xA;SET DOCUMENTO_ID = replace(DOCUMENTO_ID, 'B', '')&#xA;WHERE DOCUMENTO_ID LIKE '%B';&#xA;&#xA;UPDATE FT_TRANSFERENCIAS&#xA;SET DOCUMENTO_ID = CONCAT (&#xA;&#x9;&#x9;'C'&#xA;&#x9;&#x9;,DOCUMENTO_ID&#xA;&#x9;&#x9;)&#xA;WHERE DOCUMENTO_ID LIKE 'I%';&#xA;&#xA;UPDATE f&#xA;SET f.DOCUMENTO_ID = (&#xA;&#x9;&#x9;SELECT DISTINCT CONCAT (&#xA;&#x9;&#x9;&#x9;&#x9;trim(tipo_doc)&#xA;&#x9;&#x9;&#x9;&#x9;,trim(documento_nro)&#xA;&#x9;&#x9;&#x9;&#x9;)&#xA;&#x9;&#x9;FROM dw_ucu.[dbo].[DT_Funcionario] dt&#xA;&#x9;&#x9;WHERE dt.funid = SAICO_ID&#xA;&#x9;&#x9;)&#xA;FROM FT_TRANSFERENCIAS f&#xA;WHERE DOCUMENTO_ID IS NULL;&#xA;&#xA;UPDATE F&#xA;SET f.DOCUMENTO_ID = (&#xA;&#x9;&#x9;SELECT CONCAT (&#xA;&#x9;&#x9;&#x9;&#x9;f2.tipo_doc&#xA;&#x9;&#x9;&#x9;&#x9;,F2.documento_nro&#xA;&#x9;&#x9;&#x9;&#x9;)&#xA;&#x9;&#x9;FROM DT_Funcionario f2&#xA;&#x9;&#x9;WHERE f2.funid = F.saico_id&#xA;&#x9;&#x9;)&#xA;FROM FT_TRANSFERENCIAS F&#xA;LEFT JOIN DT_Funcionario FU ON F.DOCUMENTO_ID = CONCAT (&#xA;&#x9;&#x9;fu.tipo_doc&#xA;&#x9;&#x9;,FU.documento_nro&#xA;&#x9;&#x9;)&#xA;WHERE fu.funnom1 IS NULL&#xA;&#x9;AND fuente = 'SAICO';&#xA;&#xA;UPDATE FT_TRANSFERENCIAS&#xA;SET DOCUMENTO_ID = 'CI60633891'&#xA;WHERE DOCUMENTO_ID = 'CD6063389';&#xA;&#xA;UPDATE FT_TRANSFERENCIAS&#xA;SET DOCUMENTO_ID = 'CI62477449'&#xA;WHERE DOCUMENTO_ID = 'DNI21024519';&#xA;&#xA;UPDATE FT_TRANSFERENCIAS&#xA;SET DOCUMENTO_ID = 'CI37259551'&#xA;WHERE DOCUMENTO_ID = 'DNI37259550';&#xA;&#xA;UPDATE FT_TRANSFERENCIAS&#xA;SET DOCUMENTO_ID = 'CI60532544'&#xA;WHERE DOCUMENTO_ID = 'PAS238713';&#xA;&#xA;-- Valores de Diciembre a Enero&#xA;-- SAICO &#xA;UPDATE f1&#xA;SET ValorHoraLiq = (&#xA;&#x9;&#x9;SELECT TOP 1 ValorHoraLiq&#xA;&#x9;&#x9;FROM FT_TRANSFERENCIAS f2&#xA;&#x9;&#x9;WHERE f2.DOCUMENTO_ID = f1.DOCUMENTO_ID&#xA;&#x9;&#x9;&#x9;AND f2.TIPO_HORA = f1.TIPO_HORA&#xA;&#x9;&#x9;&#x9;AND f2.CARGO_ID = f1.CARGO_ID&#xA;&#x9;&#x9;&#x9;AND f2.fuente = f1.fuente&#xA;&#x9;&#x9;&#x9;AND f2.CC_ORIGEN = f1.CC_ORIGEN&#xA;&#x9;&#x9;&#x9;AND f2.CC_DESTINO = f1.CC_DESTINo&#xA;&#x9;&#x9;&#x9;AND f2.Año = f1.Año - 1&#xA;&#x9;&#x9;&#x9;AND f2.Mes = 12&#xA;&#x9;&#x9;&#x9;AND f2.TIPO_HORA = 'PAD'&#xA;&#x9;&#x9;&#x9;AND f1.TIPO_TRANSACCION = f2.TIPO_TRANSACCION&#xA;&#x9;&#x9;)&#xA;FROM FT_TRANSFERENCIAS f1&#xA;WHERE f1.Mes = 1&#xA;&#x9;AND f1.TIPO_HORA = 'PAD'&#xA;&#x9;AND f1.FUENTE = 'SAICO'&#xA;&#x9;AND f1.ValorHoraLiq IS NOT NULL;&#xA;&#xA;UPDATE f1&#xA;SET ValorHoraLiq = (&#xA;&#x9;&#x9;SELECT TOP 1 ValorHoraLiq&#xA;&#x9;&#x9;FROM FT_TRANSFERENCIAS f2&#xA;&#x9;&#x9;WHERE f2.DOCUMENTO_ID = f1.DOCUMENTO_ID&#xA;&#x9;&#x9;&#x9;AND f2.TIPO_HORA = f1.TIPO_HORA&#xA;&#x9;&#x9;&#x9;AND f2.CARGO_ID = f1.CARGO_ID&#xA;&#x9;&#x9;&#x9;AND f2.fuente = f1.fuente&#xA;&#x9;&#x9;&#x9;AND f2.CC_ORIGEN = f1.CC_ORIGEN&#xA;&#x9;&#x9;&#x9;AND f2.CC_DESTINO = f1.CC_DESTINo&#xA;&#x9;&#x9;&#x9;AND f2.Año = f1.Año - 1&#xA;&#x9;&#x9;&#x9;AND f2.Mes = 12&#xA;&#x9;&#x9;&#x9;AND f2.TIPO_HORA = 'GESTION'&#xA;&#x9;&#x9;&#x9;AND f1.TIPO_TRANSACCION = f2.TIPO_TRANSACCION&#xA;&#x9;&#x9;)&#xA;FROM FT_TRANSFERENCIAS f1&#xA;WHERE f1.Mes = 1&#xA;&#x9;AND f1.TIPO_HORA = 'GESTION'&#xA;&#x9;AND f1.FUENTE = 'SAICO'&#xA;&#x9;AND f1.ValorHoraLiq IS NOT NULL;&#xA;&#xA;UPDATE f1&#xA;SET ValorHoraLiq = (&#xA;&#x9;&#x9;SELECT TOP 1 ValorHoraLiq&#xA;&#x9;&#x9;FROM FT_TRANSFERENCIAS f2&#xA;&#x9;&#x9;WHERE f2.DOCUMENTO_ID = f1.DOCUMENTO_ID&#xA;&#x9;&#x9;&#x9;AND f2.TIPO_HORA = f1.TIPO_HORA&#xA;&#x9;&#x9;&#x9;AND f2.CARGO_ID = f1.CARGO_ID&#xA;&#x9;&#x9;&#x9;AND f2.fuente = f1.fuente&#xA;&#x9;&#x9;&#x9;AND f2.CC_ORIGEN = f1.CC_ORIGEN&#xA;&#x9;&#x9;&#x9;AND f2.CC_DESTINO = f1.CC_DESTINo&#xA;&#x9;&#x9;&#x9;AND f2.Año = f1.Año - 1&#xA;&#x9;&#x9;&#x9;AND f2.Mes = 12&#xA;&#x9;&#x9;&#x9;AND f2.TIPO_HORA = 'DOCENCIA AULAS'&#xA;&#x9;&#x9;&#x9;AND f1.TIPO_TRANSACCION = f2.TIPO_TRANSACCION&#xA;&#x9;&#x9;)&#xA;FROM FT_TRANSFERENCIAS f1&#xA;WHERE f1.Mes = 1&#xA;&#x9;AND f1.TIPO_HORA = 'DOCENCIA AULAS'&#xA;&#x9;AND f1.FUENTE = 'SAICO'&#xA;&#x9;AND f1.ValorHoraLiq IS NOT NULL;&#xA;&#xA;UPDATE f1&#xA;SET ValorHoraLiq = (&#xA;&#x9;&#x9;SELECT TOP 1 ValorHoraLiq&#xA;&#x9;&#x9;FROM FT_TRANSFERENCIAS f2&#xA;&#x9;&#x9;WHERE f2.DOCUMENTO_ID = f1.DOCUMENTO_ID&#xA;&#x9;&#x9;&#x9;AND f2.TIPO_HORA = f1.TIPO_HORA&#xA;&#x9;&#x9;&#x9;AND f2.CARGO_ID = f1.CARGO_ID&#xA;&#x9;&#x9;&#x9;AND f2.fuente = f1.fuente&#xA;&#x9;&#x9;&#x9;AND f2.CC_ORIGEN = f1.CC_ORIGEN&#xA;&#x9;&#x9;&#x9;AND f2.CC_DESTINO = f1.CC_DESTINo&#xA;&#x9;&#x9;&#x9;AND f2.Año = f1.Año - 1&#xA;&#x9;&#x9;&#x9;AND f2.Mes = 12&#xA;&#x9;&#x9;&#x9;AND f2.TIPO_HORA = 'DOCENCIA PAD'&#xA;&#x9;&#x9;&#x9;AND f1.TIPO_TRANSACCION = f2.TIPO_TRANSACCION&#xA;&#x9;&#x9;)&#xA;FROM FT_TRANSFERENCIAS f1&#xA;WHERE f1.Mes = 1&#xA;&#x9;AND f1.TIPO_HORA = 'DOCENCIA PAD'&#xA;&#x9;AND f1.FUENTE = 'SAICO'&#xA;&#x9;AND f1.ValorHoraLiq IS NOT NULL;&#xA;&#xA;UPDATE f1&#xA;SET VALOR_TRANSACCION = ValorHoraLiq * HORAS_TRANSACCION&#xA;FROM FT_TRANSFERENCIAS f1&#xA;WHERE f1.Mes = 1&#xA;&#x9;AND f1.FUENTE = 'SAICO';&#xA;&#xA;-- COPIAS ROTADAS&#xA;-- SAICO &#xA;-- Copiar SAICO GESTION&#xA;INSERT INTO [dbo].[FT_TRANSFERENCIAS] (&#xA;&#x9;[DOCUMENTO_ID]&#xA;&#x9;,[FEC_INICIO_DESG]&#xA;&#x9;,[FEC_FIN_DESG]&#xA;&#x9;,[ValorHoraLiq]&#xA;&#x9;,[ValorHoraCargo]&#xA;&#x9;,[TIPO_HORA]&#xA;&#x9;,[CC_ORIGEN]&#xA;&#x9;,[Año]&#xA;&#x9;,[Mes]&#xA;&#x9;,[CC_DESTINO]&#xA;&#x9;,[CARGO_ID]&#xA;&#x9;,[PORC_HORAS]&#xA;&#x9;,[ValorHoraCargoLau]&#xA;&#x9;,[HS_MENSUALES_DESIGNADAS]&#xA;&#x9;,[RUBRO_VENTA]&#xA;&#x9;,[RUBRO_COMPRA]&#xA;&#x9;,[TIPO_TRANSACCION]&#xA;&#x9;,[FACTOR]&#xA;&#x9;,[FACTOR_DISTRIBUCION]&#xA;&#x9;,[VALOR_CANTIDAD_HS]&#xA;&#x9;,[HORAS_TRANSACCION]&#xA;&#x9;,[VALOR_TRANSACCION]&#xA;&#x9;,[CICLO_ID]&#xA;&#x9;,[CLASE_ID]&#xA;&#x9;,[CANTIDAD_HS]&#xA;&#x9;,[COD_NEGOCIO]&#xA;&#x9;,[COD_CLASE_DEPTO]&#xA;&#x9;,[Total_Alumos]&#xA;&#x9;,[cantInscripto]&#xA;&#x9;,[CARRERA_ID]&#xA;&#x9;,[CANT_MESES]&#xA;&#x9;,[fuente]&#xA;&#x9;,[aniomes]&#xA;&#x9;,[SAICO_ID]&#xA;&#x9;)&#xA;SELECT [DOCUMENTO_ID]&#xA;&#x9;,[FEC_INICIO_DESG]&#xA;&#x9;,[FEC_FIN_DESG]&#xA;&#x9;,[ValorHoraLiq]&#xA;&#x9;,[ValorHoraCargo]&#xA;&#x9;,[TIPO_HORA]&#xA;&#x9;,[CC_DESTINO] [CC_ORIGEN]&#xA;&#x9;,[Año]&#xA;&#x9;,[Mes]&#xA;&#x9;,[CC_ORIGEN] [CC_DESTINO]&#xA;&#x9;,[CARGO_ID]&#xA;&#x9;,[PORC_HORAS]&#xA;&#x9;,[ValorHoraCargoLau]&#xA;&#x9;,abs([HS_MENSUALES_DESIGNADAS])&#xA;&#x9;,81101 [RUBRO_VENTA]&#xA;&#x9;,91101 [RUBRO_COMPRA]&#xA;&#x9;,'VENTA'&#xA;&#x9;,[FACTOR]&#xA;&#x9;,[FACTOR_DISTRIBUCION]&#xA;&#x9;,abs([VALOR_CANTIDAD_HS])&#xA;&#x9;,abs([HORAS_TRANSACCION])&#xA;&#x9;,abs([VALOR_TRANSACCION])&#xA;&#x9;,[CICLO_ID]&#xA;&#x9;,[CLASE_ID]&#xA;&#x9;,abs([CANTIDAD_HS])&#xA;&#x9;,[COD_NEGOCIO]&#xA;&#x9;,[COD_CLASE_DEPTO]&#xA;&#x9;,[Total_Alumos]&#xA;&#x9;,[cantInscripto]&#xA;&#x9;,[CARRERA_ID]&#xA;&#x9;,[CANT_MESES]&#xA;&#x9;,[fuente]&#xA;&#x9;,[aniomes]&#xA;&#x9;,[SAICO_ID]&#xA;FROM FT_TRANSFERENCIAS&#xA;WHERE TIPO_TRANSACCION = 'COMPRA'&#xA;&#x9;AND fuente = 'SAICO'&#xA;&#x9;AND TIPO_HORA = 'GESTION';&#xA;&#xA;-- Copiar SAICO Aulas&#xA;INSERT INTO [dbo].[FT_TRANSFERENCIAS] (&#xA;&#x9;[DOCUMENTO_ID]&#xA;&#x9;,[FEC_INICIO_DESG]&#xA;&#x9;,[FEC_FIN_DESG]&#xA;&#x9;,[ValorHoraLiq]&#xA;&#x9;,[ValorHoraCargo]&#xA;&#x9;,[TIPO_HORA]&#xA;&#x9;,[CC_ORIGEN]&#xA;&#x9;,[Año]&#xA;&#x9;,[Mes]&#xA;&#x9;,[CC_DESTINO]&#xA;&#x9;,[CARGO_ID]&#xA;&#x9;,[PORC_HORAS]&#xA;&#x9;,[ValorHoraCargoLau]&#xA;&#x9;,[HS_MENSUALES_DESIGNADAS]&#xA;&#x9;,[RUBRO_VENTA]&#xA;&#x9;,[RUBRO_COMPRA]&#xA;&#x9;,[TIPO_TRANSACCION]&#xA;&#x9;,[FACTOR]&#xA;&#x9;,[FACTOR_DISTRIBUCION]&#xA;&#x9;,[VALOR_CANTIDAD_HS]&#xA;&#x9;,[HORAS_TRANSACCION]&#xA;&#x9;,[VALOR_TRANSACCION]&#xA;&#x9;,[CICLO_ID]&#xA;&#x9;,[CLASE_ID]&#xA;&#x9;,[CANTIDAD_HS]&#xA;&#x9;,[COD_NEGOCIO]&#xA;&#x9;,[COD_CLASE_DEPTO]&#xA;&#x9;,[Total_Alumos]&#xA;&#x9;,[cantInscripto]&#xA;&#x9;,[CARRERA_ID]&#xA;&#x9;,[CANT_MESES]&#xA;&#x9;,[fuente]&#xA;&#x9;,[aniomes]&#xA;&#x9;,[SAICO_ID]&#xA;&#x9;)&#xA;SELECT [DOCUMENTO_ID]&#xA;&#x9;,[FEC_INICIO_DESG]&#xA;&#x9;,[FEC_FIN_DESG]&#xA;&#x9;,[ValorHoraLiq]&#xA;&#x9;,[ValorHoraCargo]&#xA;&#x9;,[TIPO_HORA]&#xA;&#x9;,[CC_DESTINO] [CC_ORIGEN]&#xA;&#x9;,[Año]&#xA;&#x9;,[Mes]&#xA;&#x9;,[CC_ORIGEN] [CC_DESTINO]&#xA;&#x9;,[CARGO_ID]&#xA;&#x9;,[PORC_HORAS]&#xA;&#x9;,[ValorHoraCargoLau]&#xA;&#x9;,abs([HS_MENSUALES_DESIGNADAS]) * - 1&#xA;&#x9;,[RUBRO_VENTA]&#xA;&#x9;,[RUBRO_COMPRA]&#xA;&#x9;,'Transferencia Origen'&#xA;&#x9;,[FACTOR]&#xA;&#x9;,[FACTOR_DISTRIBUCION]&#xA;&#x9;,abs([VALOR_CANTIDAD_HS]) * - 1&#xA;&#x9;,abs([HORAS_TRANSACCION]) * - 1&#xA;&#x9;,abs([VALOR_TRANSACCION]) * - 1&#xA;&#x9;,[CICLO_ID]&#xA;&#x9;,[CLASE_ID]&#xA;&#x9;,abs([CANTIDAD_HS]) * - 1&#xA;&#x9;,[COD_NEGOCIO]&#xA;&#x9;,[COD_CLASE_DEPTO]&#xA;&#x9;,[Total_Alumos]&#xA;&#x9;,[cantInscripto]&#xA;&#x9;,[CARRERA_ID]&#xA;&#x9;,[CANT_MESES]&#xA;&#x9;,[fuente]&#xA;&#x9;,[aniomes]&#xA;&#x9;,[SAICO_ID]&#xA;FROM FT_TRANSFERENCIAS&#xA;WHERE TIPO_TRANSACCION = 'Transferencia Destino'&#xA;&#x9;AND fuente = 'SAICO';&#xA;&#xA;-- Copiar SAICO Docencia PAD&#xA;INSERT INTO [dbo].[FT_TRANSFERENCIAS] (&#xA;&#x9;[DOCUMENTO_ID]&#xA;&#x9;,[FEC_INICIO_DESG]&#xA;&#x9;,[FEC_FIN_DESG]&#xA;&#x9;,[ValorHoraLiq]&#xA;&#x9;,[ValorHoraCargo]&#xA;&#x9;,[TIPO_HORA]&#xA;&#x9;,[CC_ORIGEN]&#xA;&#x9;,[Año]&#xA;&#x9;,[Mes]&#xA;&#x9;,[CC_DESTINO]&#xA;&#x9;,[CARGO_ID]&#xA;&#x9;,[PORC_HORAS]&#xA;&#x9;,[ValorHoraCargoLau]&#xA;&#x9;,[HS_MENSUALES_DESIGNADAS]&#xA;&#x9;,[RUBRO_VENTA]&#xA;&#x9;,[RUBRO_COMPRA]&#xA;&#x9;,[TIPO_TRANSACCION]&#xA;&#x9;,[FACTOR]&#xA;&#x9;,[FACTOR_DISTRIBUCION]&#xA;&#x9;,[VALOR_CANTIDAD_HS]&#xA;&#x9;,[HORAS_TRANSACCION]&#xA;&#x9;,[VALOR_TRANSACCION]&#xA;&#x9;,[CICLO_ID]&#xA;&#x9;,[CLASE_ID]&#xA;&#x9;,[CANTIDAD_HS]&#xA;&#x9;,[COD_NEGOCIO]&#xA;&#x9;,[COD_CLASE_DEPTO]&#xA;&#x9;,[Total_Alumos]&#xA;&#x9;,[cantInscripto]&#xA;&#x9;,[CARRERA_ID]&#xA;&#x9;,[CANT_MESES]&#xA;&#x9;,[fuente]&#xA;&#x9;,[aniomes]&#xA;&#x9;,[SAICO_ID]&#xA;&#x9;)&#xA;SELECT [DOCUMENTO_ID]&#xA;&#x9;,[FEC_INICIO_DESG]&#xA;&#x9;,[FEC_FIN_DESG]&#xA;&#x9;,([ValorHoraLiq])&#xA;&#x9;,([ValorHoraCargo])&#xA;&#x9;,[TIPO_HORA]&#xA;&#x9;,[CC_DESTINO]&#xA;&#x9;,[Año]&#xA;&#x9;,[Mes]&#xA;&#x9;,[CC_ORIGEN]&#xA;&#x9;,[CARGO_ID]&#xA;&#x9;,[PORC_HORAS]&#xA;&#x9;,([ValorHoraCargoLau])&#xA;&#x9;,([HS_MENSUALES_DESIGNADAS]) * - 1&#xA;&#x9;,[RUBRO_COMPRA]&#xA;&#x9;,[RUBRO_VENTA]&#xA;&#x9;,'VENTA'&#xA;&#x9;,[FACTOR]&#xA;&#x9;,[FACTOR_DISTRIBUCION]&#xA;&#x9;,([VALOR_CANTIDAD_HS]) * - 1&#xA;&#x9;,([HORAS_TRANSACCION]) * - 1&#xA;&#x9;,([VALOR_TRANSACCION]) * - 1&#xA;&#x9;,[CICLO_ID]&#xA;&#x9;,[CLASE_ID]&#xA;&#x9;,[CANTIDAD_HS] * - 1&#xA;&#x9;,[COD_NEGOCIO]&#xA;&#x9;,[COD_CLASE_DEPTO]&#xA;&#x9;,[Total_Alumos]&#xA;&#x9;,[cantInscripto]&#xA;&#x9;,[CARRERA_ID]&#xA;&#x9;,[CANT_MESES]&#xA;&#x9;,[fuente]&#xA;&#x9;,[aniomes]&#xA;&#x9;,[SAICO_ID]&#xA;FROM FT_TRANSFERENCIAS&#xA;WHERE [TIPO_HORA] = 'DOCENCIA PAD'&#xA;&#x9;AND fuente = 'SAICO'&#xA;&#x9;AND TIPO_TRANSACCION = 'COMPRA';&#xA;&#xA;-- UNIDADES OPERATIVAS &#xA;UPDATE FT&#xA;SET FT.[UNIDAD_ORIGEN_ID] = (&#xA;&#x9;&#x9;SELECT TOP 1 FIN_CC_CLAVE_UNOP&#xA;&#x9;&#x9;FROM DT_CENTROS_COSTO CC&#xA;&#x9;&#x9;WHERE CC.CENTRO_COSTO_ANIO = FT.Año&#xA;&#x9;&#x9;&#x9;AND FIN_CC_CLAVE_UNIF = FT.CC_ORIGEN&#xA;&#x9;&#x9;)&#xA;FROM FT_TRANSFERENCIAS FT&#xA;WHERE ft.fuente = 'SAICO'&#xA;&#x9;AND Año * 100 + mes &gt; 202109;&#xA;&#xA;UPDATE FT&#xA;SET FT.UNIDAD_DESTINO_ID = (&#xA;&#x9;&#x9;SELECT TOP 1 FIN_CC_CLAVE_UNOP&#xA;&#x9;&#x9;FROM DT_CENTROS_COSTO CC&#xA;&#x9;&#x9;WHERE CC.CENTRO_COSTO_ANIO = FT.Año&#xA;&#x9;&#x9;&#x9;AND FIN_CC_CLAVE_UNIF = FT.CC_DESTINO&#xA;&#x9;&#x9;)&#xA;FROM FT_TRANSFERENCIAS FT&#xA;WHERE ft.fuente = 'SAICO'&#xA;&#x9;AND Año * 100 + mes &gt; 202109;--  and ft.TIPO_HORA='DOCENCIA PAD' and UNIDAD_DESTINO_ID is null;&#xA;&#xA;-- Si no encontro por a;o&gt;&#xA;UPDATE FT&#xA;SET FT.[UNIDAD_ORIGEN_ID] = (&#xA;&#x9;&#x9;SELECT TOP 1 FIN_CC_CLAVE_UNOP&#xA;&#x9;&#x9;FROM DT_CENTROS_COSTO CC&#xA;&#x9;&#x9;WHERE FIN_CC_CLAVE_UNIF = FT.CC_ORIGEN&#xA;&#x9;&#x9;)&#xA;FROM FT_TRANSFERENCIAS FT&#xA;WHERE Ft.UNIDAD_ORIGEN_ID IS NULL;&#xA;&#xA;UPDATE FT&#xA;SET FT.[UNIDAD_DESTINO_ID] = (&#xA;&#x9;&#x9;SELECT TOP 1 FIN_CC_CLAVE_UNOP&#xA;&#x9;&#x9;FROM DT_CENTROS_COSTO CC&#xA;&#x9;&#x9;WHERE FIN_CC_CLAVE_UNIF = FT.CC_DESTINO&#xA;&#x9;&#x9;)&#xA;FROM FT_TRANSFERENCIAS FT&#xA;WHERE Ft.UNIDAD_DESTINO_ID IS NULL;&#xA;&#xA;-- Transferencias que estan por MAGIX &#xA;DELETE&#xA;FROM FT_TRANSFERENCIAS&#xA;WHERE fuente = 'SAICO'&#xA;&#x9;AND Año * 100 + mes &lt; 202110;&#xA;&#xA;DELETE F&#xA;FROM FT_TRANSFERENCIAS F&#xA;WHERE F.fuente = 'MAGIX' -- and  DOCUMENTO_ID='CI40706646'&#xA;&#x9;AND TIPO_HORA = 'GESTION'&#xA;&#x9;AND NOT EXISTS (&#xA;&#x9;&#x9;SELECT *&#xA;&#x9;&#x9;FROM FT_TRANSFERENCIAS F2&#xA;&#x9;&#x9;WHERE F2.fuente = 'MAGIX'&#xA;&#x9;&#x9;&#x9;AND F2.TIPO_HORA = 'PAD'&#xA;&#x9;&#x9;&#x9;AND F2.DOCUMENTO_ID = F.DOCUMENTO_ID&#xA;&#x9;&#x9;&#x9;AND f2.aniomes = f.aniomes&#xA;&#x9;&#x9;);&#xA;&#xA;DELETE f&#xA;FROM FT_TRANSFERENCIAS F&#xA;WHERE TIPO_HORA = 'GESTION'&#xA;&#x9;AND NOT EXISTS (&#xA;&#x9;&#x9;SELECT *&#xA;&#x9;&#x9;FROM FT_TRANSFERENCIAS F2&#xA;&#x9;&#x9;WHERE F2.TIPO_HORA = 'PAD'&#xA;&#x9;&#x9;&#x9;AND F2.DOCUMENTO_ID = F.DOCUMENTO_ID&#xA;&#x9;&#x9;&#x9;AND f2.aniomes = f.aniomes&#xA;&#x9;&#x9;)&#xA;&#xA;-- Borrar mes corriente&#xA;DELETE&#xA;FROM FT_TRANSFERENCIAS&#xA;WHERE fuente = 'SAICO'&#xA;&#x9;AND Año * 100 + mes = YEAR(CURRENT_TIMESTAMP) * 100 + MONTH(CURRENT_TIMESTAMP);&#xA;&#xA;-- VEr de eliminar este arreglo.&#xA;UPDATE FT_TRANSFERENCIAS&#xA;SET RUBRO_VENTA = 91101&#xA;&#x9;,RUBRO_COMPRA = 81101&#xA;WHERE fuente = 'SAICO'&#xA;&#x9;AND TIPO_HORA = 'GESTION'&#xA;&#x9;AND RUBRO_VENTA = 81101&#xA;&#xA;UPDATE FT_TRANSFERENCIAS&#xA;SET RUBRO_VENTA = 81101&#xA;&#x9;,RUBRO_COMPRA = 91101&#xA;WHERE fuente = 'SAICO'&#xA;&#x9;AND TIPO_HORA = 'GESTION'&#xA;&#x9;AND RUBRO_VENTA = 91101&#xA;&#x9;AND TIPO_TRANSACCION = 'VENTA'&#xA;&#xA;UPDATE FT_TRANSFERENCIAS&#xA;SET RUBRO_VENTA = 91102&#xA;&#x9;,RUBRO_COMPRA = 81102&#xA;WHERE fuente = 'SAICO'&#xA;&#x9;AND TIPO_HORA = 'DOCENCIA PAD'&#xA;&#x9;AND RUBRO_VENTA = 81102&#xA;&#xA;UPDATE FT_TRANSFERENCIAS&#xA;SET RUBRO_VENTA = 81102&#xA;&#x9;,RUBRO_COMPRA = 91102&#xA;WHERE fuente = 'SAICO'&#xA;&#x9;AND TIPO_HORA = 'DOCENCIA PAD'&#xA;&#x9;AND RUBRO_VENTA = 91102&#xA;&#x9;AND TIPO_TRANSACCION = 'VENTA'&#xA;&#xA;-- update FT_TRANSFERENCIAS set UNIDAD_ORIGEN_ID_aux = CC_DESTINO,  UNIDAD_DESTINO_ID_aux = CC_ORIGEN&#xA;-- where TIPO_HORA='DOCENCIA PAD' and TIPO_TRANSACCION='VENTA' and fuente='SAICO';&#xA;-- update FT_TRANSFERENCIAS set CC_ORIGEN = UNIDAD_ORIGEN_ID_aux,  CC_DESTINO =UNIDAD_DESTINO_ID_aux &#xA;-- where TIPO_HORA='DOCENCIA PAD' and TIPO_TRANSACCION='VENTA' and fuente='SAICO';&#xA;-- update FT_TRANSFERENCIAS set UNIDAD_ORIGEN_ID_aux = CC_DESTINO,  UNIDAD_DESTINO_ID_aux = CC_ORIGEN&#xA;-- where TIPO_HORA='DOCENCIA PAD' and TIPO_TRANSACCION='COMPRA' and fuente='SAICO';&#xA;-- update FT_TRANSFERENCIAS set CC_ORIGEN = UNIDAD_ORIGEN_ID_aux,  CC_DESTINO =UNIDAD_DESTINO_ID_aux &#xA;-- where TIPO_HORA='DOCENCIA PAD' and TIPO_TRANSACCION='COMPRA' and fuente='SAICO';&#xA;-- Valore no encontrados&#xA;UPDATE F&#xA;SET ValorHoraLiq = (&#xA;&#x9;&#x9;SELECT TOP 1 L.ValorHoraLiq&#xA;&#x9;&#x9;FROM [DW_UCU].[dbo].[DT_Docente] D&#xA;&#x9;&#x9;&#x9;,ODS_UCU.dbo.ODS_SAICO_LIQUIDACIONES L&#xA;&#x9;&#x9;&#x9;,[ODS_UCU].[dbo].[ODS_MAPEO_FUNCIONARIOS] map&#xA;&#x9;&#x9;WHERE L.SaicoID = map.NRO_FUN_SAICO&#xA;&#x9;&#x9;&#x9;AND d.EMPLID = map.EMPLID&#xA;&#x9;&#x9;&#x9;AND D.DOCUMENTO_ID = F.DOCUMENTO_ID&#xA;&#x9;&#x9;&#x9;AND L.Año = F.Año&#xA;&#x9;&#x9;&#x9;AND L.Mes = F.Mes&#xA;&#x9;&#x9;ORDER BY L.Año * 100 + L.Mes DESC&#xA;&#x9;&#x9;)&#xA;FROM FT_TRANSFERENCIAS F&#xA;WHERE fuente = 'SAICO' --and SAICO_ID=322370  --and ValorHoraLiq is null --and SAICO_ID is null &#xA;&#x9;;&#xA;&#xA;UPDATE F&#xA;SET ValorHoraCargo = (&#xA;&#x9;&#x9;SELECT TOP 1 L.ValorHoraCargo&#xA;&#x9;&#x9;FROM [DW_UCU].[dbo].[DT_Docente] D&#xA;&#x9;&#x9;&#x9;,ODS_UCU.dbo.ODS_SAICO_LIQUIDACIONES L&#xA;&#x9;&#x9;&#x9;,[ODS_UCU].[dbo].[ODS_MAPEO_FUNCIONARIOS] map&#xA;&#x9;&#x9;WHERE L.SaicoID = map.NRO_FUN_SAICO&#xA;&#x9;&#x9;&#x9;AND d.EMPLID = map.EMPLID&#xA;&#x9;&#x9;&#x9;AND D.DOCUMENTO_ID = F.DOCUMENTO_ID&#xA;&#x9;&#x9;&#x9;AND L.Año = F.Año&#xA;&#x9;&#x9;&#x9;AND L.Mes = F.Mes&#xA;&#x9;&#x9;ORDER BY L.Año * 100 + L.Mes DESC&#xA;&#x9;&#x9;)&#xA;FROM FT_TRANSFERENCIAS F&#xA;WHERE fuente = 'SAICO' --and SAICO_ID=322370  --and ValorHoraLiq is null --and SAICO_ID is null &#xA;&#x9;;&#xA;&#xA;UPDATE F&#xA;SET ValorHoraCargoLau = (&#xA;&#x9;&#x9;SELECT TOP 1 L.ValorHoraCargoLau&#xA;&#x9;&#x9;FROM [DW_UCU].[dbo].[DT_Docente] D&#xA;&#x9;&#x9;&#x9;,ODS_UCU.dbo.ODS_SAICO_LIQUIDACIONES L&#xA;&#x9;&#x9;&#x9;,[ODS_UCU].[dbo].[ODS_MAPEO_FUNCIONARIOS] map&#xA;&#x9;&#x9;WHERE L.SaicoID = map.NRO_FUN_SAICO&#xA;&#x9;&#x9;&#x9;AND d.EMPLID = map.EMPLID&#xA;&#x9;&#x9;&#x9;AND D.DOCUMENTO_ID = F.DOCUMENTO_ID&#xA;&#x9;&#x9;&#x9;AND L.Año = F.Año&#xA;&#x9;&#x9;&#x9;AND L.Mes = F.Mes&#xA;&#x9;&#x9;ORDER BY L.Año * 100 + L.Mes DESC&#xA;&#x9;&#x9;)&#xA;FROM FT_TRANSFERENCIAS F&#xA;WHERE fuente = 'SAICO' --and SAICO_ID=322370  --and ValorHoraLiq is null --and SAICO_ID is null &#xA;&#x9;;&#xA;&#xA;-- update FT_TRANSFERENCIAS set VALOR_CANTIDAD_HS=  ValorHoraLiq*HS_MENSUALES_DESIGNADAS, VALOR_TRANSACCION=ValorHoraLiq*HS_MENSUALES_DESIGNADAS*FACTOR_DISTRIBUCION&#xA;-- where fuente='SAICO';&#xA;&#xA;-- Para reflejar el gasto de salario vacacional y aguinaldos&#xA;UPDATE FT_TRANSFERENCIAS&#xA;SET ValorHoraLiq = ValorHoraLiq * (SELECT [coeficiente_valor_hora]&#xA;  FROM [DW_UCU].[dbo].[DT_COEFICIENTES_VAL_HS]&#xA;  where [fecha_vigencia_hasta] is null)&#xA;  WHERE FUENTE='SAICO';&#xA;&#x9;&#xA;&#x9;&#xA;UPDATE FT_TRANSFERENCIAS&#xA;SET VALOR_CANTIDAD_HS = ValorHoraLiq * HORAS_TRANSACCION&#xA;&#x9;,VALOR_TRANSACCION = ValorHoraLiq * HORAS_TRANSACCION&#xA;&#xA;-- where fuente='MAGIX' and Mes=1 and Año&gt;2019;&#xA;-- CONTROL select * from FT_TRANSFERENCIAS where   TIPO_TRANSACCION='VENTA' and VALOR_TRANSACCION&lt;0&#xA;UPDATE FT_TRANSFERENCIAS&#xA;SET HORAS_TRANSACCION = abs(HORAS_TRANSACCION) * - 1&#xA;&#x9;,VALOR_TRANSACCION = abs(VALOR_TRANSACCION) * - 1&#xA;&#x9;,HS_MENSUALES_DESIGNADAS = abs(HS_MENSUALES_DESIGNADAS) * - 1&#xA;WHERE TIPO_HORA = 'DOCENCIA AULAS'&#xA;&#x9;AND TIPO_TRANSACCION = 'Transferencia Destino';&#xA;&#xA;UPDATE FT_TRANSFERENCIAS&#xA;SET HORAS_TRANSACCION = abs(HORAS_TRANSACCION)&#xA;&#x9;,VALOR_TRANSACCION = abs(VALOR_TRANSACCION)&#xA;&#x9;,HS_MENSUALES_DESIGNADAS = abs(HS_MENSUALES_DESIGNADAS)&#xA;WHERE TIPO_HORA = 'DOCENCIA AULAS'&#xA;&#x9;AND TIPO_TRANSACCION = 'Transferencia Origen';&#xA;&#xA;-- select HORAS_TRANSACCION , HS_MENSUALES_DESIGNADAS from FT_TRANSFERENCIAS where VALOR_TRANSACCION is null and TIPO_HORA='PAD' and Año=2021&#xA;UPDATE FT_TRANSFERENCIAS&#xA;SET VALOR_TRANSACCION = NULL&#xA;WHERE TIPO_HORA = 'PAD';&#xA;&#xA;-- CONTROL select * from FT_TRANSFERENCIAS where   TIPO_TRANSACCION='COMPRA' and VALOR_TRANSACCION&gt;0&#xA;UPDATE FT_TRANSFERENCIAS&#xA;SET HORAS_TRANSACCION = abs(HORAS_TRANSACCION) * - 1&#xA;&#x9;,VALOR_TRANSACCION = abs(VALOR_TRANSACCION) * - 1&#xA;&#x9;,HS_MENSUALES_DESIGNADAS = abs(HS_MENSUALES_DESIGNADAS) * - 1&#xA;WHERE TIPO_HORA = 'GESTION'&#xA;&#x9;AND TIPO_TRANSACCION = 'COMPRA';&#xA;&#xA;UPDATE FT_TRANSFERENCIAS&#xA;SET HORAS_TRANSACCION = abs(HORAS_TRANSACCION)&#xA;&#x9;,VALOR_TRANSACCION = abs(VALOR_TRANSACCION)&#xA;&#x9;,HS_MENSUALES_DESIGNADAS = abs(HS_MENSUALES_DESIGNADAS)&#xA;WHERE TIPO_HORA = 'GESTION'&#xA;&#x9;AND TIPO_TRANSACCION = 'VENTA';&#xA;&#xA;UPDATE ft&#xA;SET cod_negocio = CASE &#xA;&#x9;&#x9;WHEN d.CAMPUS_ID = 'MVD'&#xA;&#x9;&#x9;&#x9;THEN 'MDEO'&#xA;&#x9;&#x9;WHEN D.CAMPUS_id = 'PESTE'&#xA;&#x9;&#x9;&#x9;THEN 'PDELESTE'&#xA;&#x9;&#x9;ELSE d.campus_id&#xA;&#x9;&#x9;END&#xA;FROM FT_TRANSFERENCIAS FT&#xA;LEFT JOIN dt_clase_inst d ON convert(VARCHAR(4), ft.ciclo_id) + right('000000' + ft.clase_id, 6) = cast(d.CLAVE_CICLO_CLASE as varchar)&#xA;WHERE (FT.COD_NEGOCIO IS NULL)&#xA;&#x9;AND FT.TIPO_HORA NOT IN (&#xA;&#x9;&#x9;'Designacion PAD'&#xA;&#x9;&#x9;,'GESTION'&#xA;&#x9;&#x9;) -- 258.283&#xA;&#x9;AND d.CICLO_ID NOT IN (&#xA;&#x9;&#x9;'123'&#xA;&#x9;&#x9;,'1234'&#xA;&#x9;&#x9;,''&#xA;&#x9;&#x9;)&#xA;&#x9;AND ft.ciclo_id NOT IN (&#xA;&#x9;&#x9;'CURS'&#xA;&#x9;&#x9;,'PLEN'&#xA;&#x9;&#x9;,'PRUE'&#xA;&#x9;&#x9;,'VIRT'&#xA;&#x9;&#x9;);&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -150,8 +204,10 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="borrar FT"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{FADBA1DA-E4FC-45ED-AE47-9EBF3DC3117B}"
@@ -167,8 +223,10 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="borrar FT SAICO"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{FADBA1DA-E4FC-45ED-AE47-9EBF3DC3117B}"
@@ -185,6 +243,8 @@
       DTS:ObjectName="Transferencia SAICO Docencia AULA"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
       <DTS:ObjectData>
         <pipeline
           version="1">
@@ -3214,6 +3274,8 @@ where Año*100+Mes&gt;=202110;</property>
       DTS:ObjectName="Transferencia SAICO Docencia PAD"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
       <DTS:ObjectData>
         <pipeline
           version="1">
@@ -4674,6 +4736,8 @@ from
       DTS:ObjectName="Transferencia SAICO GESTION"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
       <DTS:ObjectData>
         <pipeline
           version="1">
@@ -6013,6 +6077,8 @@ select ods.FEC_INICIO_DESG
       DTS:ObjectName="Transferencias Magix  Pad"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
       <DTS:ObjectData>
         <pipeline
           version="1">
@@ -7705,6 +7771,8 @@ where
       DTS:ObjectName="Transferencias Magix Aula"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
       <DTS:ObjectData>
         <pipeline
           version="1">
@@ -9383,6 +9451,8 @@ FROM (
       DTS:ObjectName="Transferencias Magix PAD GES"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
       <DTS:ObjectData>
         <pipeline
           version="1">
@@ -12265,6 +12335,8 @@ where
       DTS:ObjectName="Transferencias SAICO PAD"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
       <DTS:ObjectData>
         <pipeline
           version="1">
@@ -13494,43 +13566,43 @@ where
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="139.2,41.6"
+          Size="139,42"
           Id="Package\Ajustes"
-          TopLeft="597.85715303859,417.529417620398" />
+          TopLeft="597.85715303859,418.294123513476" />
         <NodeLayout
-          Size="139.2,41.6"
+          Size="139,42"
           Id="Package\borrar FT"
           TopLeft="51.09279799494,75.0570442539399" />
         <NodeLayout
-          Size="139.2,41.6"
+          Size="139,42"
           Id="Package\borrar FT SAICO"
           TopLeft="850.571442511617,122.352942892424" />
         <NodeLayout
-          Size="249.6,41.6"
+          Size="250,42"
           Id="Package\Transferencia SAICO Docencia AULA"
           TopLeft="192.383404501989,416.224097874045" />
         <NodeLayout
-          Size="244.8,41.6"
+          Size="245,42"
           Id="Package\Transferencia SAICO Docencia PAD"
           TopLeft="549.868142088158,319.01982153428" />
         <NodeLayout
-          Size="223.2,41.6"
+          Size="223,42"
           Id="Package\Transferencia SAICO GESTION"
           TopLeft="221.739937610246,316.4517851449" />
         <NodeLayout
-          Size="201.6,41.6"
+          Size="202,42"
           Id="Package\Transferencias Magix  Pad"
           TopLeft="260.525036066842,211.852931849398" />
         <NodeLayout
-          Size="201.6,41.6"
+          Size="202,42"
           Id="Package\Transferencias Magix Aula"
           TopLeft="582.377299400217,88.3155530607481" />
         <NodeLayout
-          Size="223.2,41.6"
+          Size="223,42"
           Id="Package\Transferencias Magix PAD GES"
           TopLeft="273.825627858918,82.1433348067241" />
         <NodeLayout
-          Size="203.2,41.6"
+          Size="203,42"
           Id="Package\Transferencias SAICO PAD"
           TopLeft="572.798555709747,212.352710706565" />
         <EdgeLayout
@@ -13669,7 +13741,7 @@ where
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 3]"
-          TopLeft="441.983404501989,437.676757747222">
+          TopLeft="441.983404501989,438.05911069376">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
